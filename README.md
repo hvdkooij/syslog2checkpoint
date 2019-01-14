@@ -2,8 +2,8 @@
 
 This is a repository that will contain some parsers I created to parse syslog data into a Check Point SmartCenter.
 
-So far I have the following parsers:
-- Linux iptables
+So far I have created  the following parsers:
+- Linux iptables (also works for routers using iptables like the ASUS WRT routers)
 - pfSense
 
 I am working a bit on:
