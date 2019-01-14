@@ -7,4 +7,4 @@ So far I have created  the following parsers:
 - pfSense (only IPv4 at the moment)
 
 I am working a bit on:
-- Barracuda Email Security Gateway
+- Barracuda Email Security Gateway (could use some help with the email fields in Check Point)
