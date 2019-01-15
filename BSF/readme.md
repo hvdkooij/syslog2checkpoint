@@ -10,5 +10,5 @@ Installation instructions:
  
  Logging format details can be found on [Syslog and the Barracuda Email Security Gateway](https://campus.barracuda.com/product/emailsecuritygateway/doc/12193950/syslog-and-the-barracuda-email-security-gateway)
  
- # THIS IS NOT A USABLE PARSER YET!!!
+ # *THIS IS NOT A USABLE PARSER YET!!!*
  
