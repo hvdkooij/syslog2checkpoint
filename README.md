@@ -8,3 +8,9 @@ So far I have created  the following parsers:
 
 I am working a bit on:
 - Barracuda Email Security Gateway (could use some help with the email fields in Check Point)
+
+| Parser | Status |
+| --- | --- |
+| BSF | Under development |
+| iptables | Workable (no IPv6 support yet) |
+| pfSense | Workable (no IPv6 support yet) |
