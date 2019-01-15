@@ -7,3 +7,4 @@ Installation instructions:
 
  ## WARNING: This will stop and restart your SmartCenter!!!
  
+See also [The netfilter.org "iptables" project](https://netfilter.org/projects/iptables/index.html)
