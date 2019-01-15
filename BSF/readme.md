@@ -12,3 +12,6 @@ Installation instructions:
  
  # *THIS IS NOT A USABLE PARSER YET!!!*
  
+BSF.C | Log Parser
+BSF.prs | Eventia Log Parser Editor
+BSF_dict.ini | Dictionary
