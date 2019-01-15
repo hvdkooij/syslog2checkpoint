@@ -8,3 +8,9 @@ Installation instructions:
  ## WARNING: This will stop and restart your SmartCenter!!!
  
 See also [The netfilter.org "iptables" project](https://netfilter.org/projects/iptables/index.html)
+
+| File | Description |
+| --- | --- |
+| iptables.C | Log Parser |
+| iptables_dict.ini | Dictionary |
+| iptables.prs | Eventia Log Parser Editor |
