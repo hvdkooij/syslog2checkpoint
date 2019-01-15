@@ -1,0 +1,1891 @@
+<?xml version="1.0"?>
+<!--This is a project file of Check Point Eventia Log Parsing Editor V1-->
+<ParserGUI>
+  <Dictionary>
+    <dict>
+      <Key>protocol</Key>
+      <subdict>
+        <Key>ip</Key>
+        <Value>0</Value>
+      </subdict>
+      <subdict>
+        <Key>IP</Key>
+        <Value>0</Value>
+      </subdict>
+      <subdict>
+        <Key>icmp</Key>
+        <Value>1</Value>
+      </subdict>
+      <subdict>
+        <Key>ICMP</Key>
+        <Value>1</Value>
+      </subdict>
+      <subdict>
+        <Key>ipinip</Key>
+        <Value>4</Value>
+      </subdict>
+      <subdict>
+        <Key>IPINIP</Key>
+        <Value>4</Value>
+      </subdict>
+      <subdict>
+        <Key>tcp</Key>
+        <Value>6</Value>
+      </subdict>
+      <subdict>
+        <Key>TCP</Key>
+        <Value>6</Value>
+      </subdict>
+      <subdict>
+        <Key>igrp</Key>
+        <Value>9</Value>
+      </subdict>
+      <subdict>
+        <Key>IGRP</Key>
+        <Value>9</Value>
+      </subdict>
+      <subdict>
+        <Key>udp</Key>
+        <Value>17</Value>
+      </subdict>
+      <subdict>
+        <Key>UDP</Key>
+        <Value>17</Value>
+      </subdict>
+      <subdict>
+        <Key>gre</Key>
+        <Value>47</Value>
+      </subdict>
+      <subdict>
+        <Key>GRE</Key>
+        <Value>47</Value>
+      </subdict>
+      <subdict>
+        <Key>pptp</Key>
+        <Value>47</Value>
+      </subdict>
+      <subdict>
+        <Key>PPTP</Key>
+        <Value>47</Value>
+      </subdict>
+      <subdict>
+        <Key>ipsec</Key>
+        <Value>50</Value>
+      </subdict>
+      <subdict>
+        <Key>IPSEC</Key>
+        <Value>50</Value>
+      </subdict>
+      <subdict>
+        <Key>esp</Key>
+        <Value>50</Value>
+      </subdict>
+      <subdict>
+        <Key>ESP</Key>
+        <Value>50</Value>
+      </subdict>
+      <subdict>
+        <Key>ah</Key>
+        <Value>51</Value>
+      </subdict>
+      <subdict>
+        <Key>AH</Key>
+        <Value>51</Value>
+      </subdict>
+      <subdict>
+        <Key>eigrp</Key>
+        <Value>88</Value>
+      </subdict>
+      <subdict>
+        <Key>EIGRP</Key>
+        <Value>88</Value>
+      </subdict>
+      <subdict>
+        <Key>ospf</Key>
+        <Value>89</Value>
+      </subdict>
+      <subdict>
+        <Key>OSPF</Key>
+        <Value>89</Value>
+      </subdict>
+      <subdict>
+        <Key>nos</Key>
+        <Value>94</Value>
+      </subdict>
+      <subdict>
+        <Key>NOS</Key>
+        <Value>94</Value>
+      </subdict>
+      <subdict>
+        <Key>pcp</Key>
+        <Value>108</Value>
+      </subdict>
+      <subdict>
+        <Key>PCP</Key>
+        <Value>108</Value>
+      </subdict>
+      <subdict>
+        <Key>snp</Key>
+        <Value>109</Value>
+      </subdict>
+      <subdict>
+        <Key>SNP</Key>
+        <Value>109</Value>
+      </subdict>
+      <subdict>
+        <Key>ICMPv6</Key>
+        <Value>58</Value>
+      </subdict>
+      <subdict>
+        <Key>icmpv6</Key>
+        <Value>58</Value>
+      </subdict>
+    </dict>
+    <dict>
+      <Key>interface_dir</Key>
+      <subdict>
+        <Key>inbound</Key>
+        <Value>0</Value>
+      </subdict>
+      <subdict>
+        <Key>outbound</Key>
+        <Value>1</Value>
+      </subdict>
+      <subdict>
+        <Key>in</Key>
+        <Value>0</Value>
+      </subdict>
+      <subdict>
+        <Key>out</Key>
+        <Value>1</Value>
+      </subdict>
+    </dict>
+    <dict>
+      <Key>action</Key>
+      <subdict>
+        <Key>DROP</Key>
+        <Value>drop</Value>
+      </subdict>
+      <subdict>
+        <Key>ACCEPT</Key>
+        <Value>accept</Value>
+      </subdict>
+    </dict>
+    <dict>
+      <Key>service</Key>
+      <subdict>
+        <Key>echo</Key>
+        <Value>7</Value>
+      </subdict>
+      <subdict>
+        <Key>discard</Key>
+        <Value>9</Value>
+      </subdict>
+      <subdict>
+        <Key>daytime</Key>
+        <Value>13</Value>
+      </subdict>
+      <subdict>
+        <Key>chargen</Key>
+        <Value>19</Value>
+      </subdict>
+      <subdict>
+        <Key>ftp-data</Key>
+        <Value>20</Value>
+      </subdict>
+      <subdict>
+        <Key>ftp</Key>
+        <Value>21</Value>
+      </subdict>
+      <subdict>
+        <Key>telnet</Key>
+        <Value>23</Value>
+      </subdict>
+      <subdict>
+        <Key>smtp</Key>
+        <Value>25</Value>
+      </subdict>
+      <subdict>
+        <Key>time</Key>
+        <Value>37</Value>
+      </subdict>
+      <subdict>
+        <Key>nameserver</Key>
+        <Value>42</Value>
+      </subdict>
+      <subdict>
+        <Key>whois</Key>
+        <Value>43</Value>
+      </subdict>
+      <subdict>
+        <Key>tacacs</Key>
+        <Value>49</Value>
+      </subdict>
+      <subdict>
+        <Key>domain</Key>
+        <Value>53</Value>
+      </subdict>
+      <subdict>
+        <Key>bootps</Key>
+        <Value>67</Value>
+      </subdict>
+      <subdict>
+        <Key>bootpc</Key>
+        <Value>68</Value>
+      </subdict>
+      <subdict>
+        <Key>tftp</Key>
+        <Value>69</Value>
+      </subdict>
+      <subdict>
+        <Key>gopher</Key>
+        <Value>70</Value>
+      </subdict>
+      <subdict>
+        <Key>finger</Key>
+        <Value>79</Value>
+      </subdict>
+      <subdict>
+        <Key>www</Key>
+        <Value>80</Value>
+      </subdict>
+      <subdict>
+        <Key>hostname</Key>
+        <Value>101</Value>
+      </subdict>
+      <subdict>
+        <Key>pop2</Key>
+        <Value>109</Value>
+      </subdict>
+      <subdict>
+        <Key>pop3</Key>
+        <Value>110</Value>
+      </subdict>
+      <subdict>
+        <Key>sunrpc</Key>
+        <Value>111</Value>
+      </subdict>
+      <subdict>
+        <Key>ident</Key>
+        <Value>113</Value>
+      </subdict>
+      <subdict>
+        <Key>nntp</Key>
+        <Value>119</Value>
+      </subdict>
+      <subdict>
+        <Key>ntp</Key>
+        <Value>123</Value>
+      </subdict>
+      <subdict>
+        <Key>netbios-ns</Key>
+        <Value>137</Value>
+      </subdict>
+      <subdict>
+        <Key>netbios-dgm</Key>
+        <Value>138</Value>
+      </subdict>
+      <subdict>
+        <Key>snmp</Key>
+        <Value>161</Value>
+      </subdict>
+      <subdict>
+        <Key>snmptrap</Key>
+        <Value>162</Value>
+      </subdict>
+      <subdict>
+        <Key>xdmcp</Key>
+        <Value>177</Value>
+      </subdict>
+      <subdict>
+        <Key>bgp</Key>
+        <Value>179</Value>
+      </subdict>
+      <subdict>
+        <Key>irc</Key>
+        <Value>194</Value>
+      </subdict>
+      <subdict>
+        <Key>dnsix</Key>
+        <Value>195</Value>
+      </subdict>
+      <subdict>
+        <Key>mobile-ip</Key>
+        <Value>434</Value>
+      </subdict>
+      <subdict>
+        <Key>exec</Key>
+        <Value>512</Value>
+      </subdict>
+      <subdict>
+        <Key>biff</Key>
+        <Value>512</Value>
+      </subdict>
+      <subdict>
+        <Key>login</Key>
+        <Value>513</Value>
+      </subdict>
+      <subdict>
+        <Key>who</Key>
+        <Value>513</Value>
+      </subdict>
+      <subdict>
+        <Key>cmd</Key>
+        <Value>514</Value>
+      </subdict>
+      <subdict>
+        <Key>syslog</Key>
+        <Value>514</Value>
+      </subdict>
+      <subdict>
+        <Key>lpd</Key>
+        <Value>515</Value>
+      </subdict>
+      <subdict>
+        <Key>talk</Key>
+        <Value>517</Value>
+      </subdict>
+      <subdict>
+        <Key>rip</Key>
+        <Value>520</Value>
+      </subdict>
+      <subdict>
+        <Key>uucp</Key>
+        <Value>540</Value>
+      </subdict>
+      <subdict>
+        <Key>klogin</Key>
+        <Value>543</Value>
+      </subdict>
+      <subdict>
+        <Key>kshell</Key>
+        <Value>544</Value>
+      </subdict>
+    </dict>
+  </Dictionary>
+  <Switches />
+  <ProductInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <productName>Firewall</productName>
+    <parseByFormat>true</parseByFormat>
+    <productregEx>kernel: (ACCEPT|DROP)</productregEx>
+    <isRegEx>true</isRegEx>
+  </ProductInfo>
+  <Patterns>
+    <Pattern>
+      <SampleName>IPtables IPv4 TCP/UDP</SampleName>
+      <LogSample>Aug 13 12:13:21 kernel: DROP IN=eth0 OUT= MAC=e0:3f:49:ee:63:00:a2:de:48:00:01:02:08:00 SRC=78.128.112.14 DST=83.128.27.58 LEN=40 TOS=0x00 PREC=0x00 TTL=250 ID=55560 PROTO=TCP SPT=58510 DPT=14687 SEQ=2669476717 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 \012</LogSample>
+      <SampleType>ORDERED</SampleType>
+      <Checked>True</Checked>
+      <Groups>
+        <Group>
+          <m_sGroupName>First Group</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>0</StartPos>
+          <Length>106</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 13 12:13:21 kernel: DROP IN=eth0 OUT= MAC=e0:3f:49:ee:63:00:a2:de:48:00:01:02:08:00 SRC=78.128.112.14 </m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 13 12:13:21</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Date Mmm dd hh:mm:ss</m_sPatternName>
+              <m_sRegEx>(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[ 	]+[0-9]+[ 	]+[0-9]+:[0-9]+:[0-9]+</m_sRegEx>
+              <m_sComment>Date and Time in format Mmm dd hh:mm:ss</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>kernel:</m_sSection>
+              <m_nSectionPos>16</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Word:</m_sPatternName>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*:</m_sRegEx>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DROP</m_sSection>
+              <m_nSectionPos>24</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_sDictionaryName>action</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>IN=</m_sSection>
+              <m_nSectionPos>29</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>IN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>eth0</m_sSection>
+              <m_nSectionPos>32</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>ifname</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Interface Name</m_sDisplayedFieldName>
+              <m_sFieldName>ifname</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>OUT= MAC=e0:3f:49:ee:63:00:a2:de:48:00:01:02:08:00</m_sSection>
+              <m_nSectionPos>37</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SRC=</m_sSection>
+              <m_nSectionPos>88</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>SRC=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>78.128.112.14</m_sSection>
+              <m_nSectionPos>92</m_nSectionPos>
+              <m_nBracketIndex>9</m_nBracketIndex>
+              <m_sPatternName>IPv4</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
+              <m_sFieldName>src</m_sFieldName>
+              <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 1</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>106</StartPos>
+          <Length>74</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=83.128.27.58 LEN=40 TOS=0x00 PREC=0x00 TTL=250 ID=55560 PROTO=TCP SPT=</m_sSection>
+              <m_nSectionPos>106</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=</m_sSection>
+              <m_nSectionPos>106</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>DST=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>83.128.27.58</m_sSection>
+              <m_nSectionPos>110</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>IPv4</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Destination</m_sDisplayedFieldName>
+              <m_sFieldName>dst</m_sFieldName>
+              <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>LEN=</m_sSection>
+              <m_nSectionPos>123</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>LEN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>40</m_sSection>
+              <m_nSectionPos>127</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>len</m_sDisplayedFieldName>
+              <m_sFieldName>len</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TOS=0x00 PREC=0x00 TTL=250 ID=55560</m_sSection>
+              <m_nSectionPos>130</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>PROTO=</m_sSection>
+              <m_nSectionPos>166</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>PROTO=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TCP</m_sSection>
+              <m_nSectionPos>172</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Protocol</m_sPatternName>
+              <m_sFieldType>protocol</m_sFieldType>
+              <m_sRegEx>udp|UDP|tcp|TCP|icmp|ICMP</m_sRegEx>
+              <m_sDisplayedFieldName>Protocol</m_sDisplayedFieldName>
+              <m_sFieldName>proto</m_sFieldName>
+              <m_sComment>Common protocols names - Don't forget to use mapping for these</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>protocol</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SPT=</m_sSection>
+              <m_nSectionPos>176</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>SPT=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 3</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>180</StartPos>
+          <Length>10</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>58510 DPT=</m_sSection>
+              <m_nSectionPos>180</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>58510</m_sSection>
+              <m_nSectionPos>180</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>port</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Source Port</m_sDisplayedFieldName>
+              <m_sFieldName>s_port</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DPT=</m_sSection>
+              <m_nSectionPos>186</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>DPT=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 2</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>190</StartPos>
+          <Length>63</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>14687 SEQ=2669476717 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 \012</m_sSection>
+              <m_nSectionPos>190</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>14687</m_sSection>
+              <m_nSectionPos>190</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>port</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Service</m_sDisplayedFieldName>
+              <m_sFieldName>service</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SEQ=2669476717 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 \012</m_sSection>
+              <m_nSectionPos>196</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+      </Groups>
+    </Pattern>
+    <Pattern>
+      <SampleName>IPtables IPv4 ICMP</SampleName>
+      <LogSample>Aug 15 00:08:22 kernel: ACCEPT IN=eth0 OUT= MAC=e0:3f:49:ee:63:00:a2:de:48:00:01:03:08:00 SRC=192.172.226.137 DST=83.128.27.58 LEN=30 TOS=0x00 PREC=0x00 TTL=244 ID=27756 DF PROTO=ICMP TYPE=8 CODE=0 ID=51724 SEQ=402 \012</LogSample>
+      <SampleType>ORDERED</SampleType>
+      <Checked>True</Checked>
+      <Groups>
+        <Group>
+          <m_sGroupName>First Group</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>0</StartPos>
+          <Length>94</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 15 00:08:22 kernel: ACCEPT IN=eth0 OUT= MAC=e0:3f:49:ee:63:00:a2:de:48:00:01:03:08:00 SRC=</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 15 00:08:22</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Date Mmm dd hh:mm:ss</m_sPatternName>
+              <m_sRegEx>(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[ 	]+[0-9]+[ 	]+[0-9]+:[0-9]+:[0-9]+</m_sRegEx>
+              <m_sComment>Date and Time in format Mmm dd hh:mm:ss</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>kernel:</m_sSection>
+              <m_nSectionPos>16</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Word:</m_sPatternName>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*:</m_sRegEx>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>ACCEPT</m_sSection>
+              <m_nSectionPos>24</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>action</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>IN=</m_sSection>
+              <m_nSectionPos>31</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>IN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>eth0</m_sSection>
+              <m_nSectionPos>34</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>ifname</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Interface Name</m_sDisplayedFieldName>
+              <m_sFieldName>ifname</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>OUT= MAC=e0:3f:49:ee:63:00:a2:de:48:00:01:03:08:00</m_sSection>
+              <m_nSectionPos>39</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SRC=</m_sSection>
+              <m_nSectionPos>90</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>SRC=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 2</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>94</StartPos>
+          <Length>20</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>192.172.226.137 DST=</m_sSection>
+              <m_nSectionPos>94</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>192.172.226.137</m_sSection>
+              <m_nSectionPos>94</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>IPv4</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
+              <m_sFieldName>src</m_sFieldName>
+              <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=</m_sSection>
+              <m_nSectionPos>110</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>DST=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 1</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>114</StartPos>
+          <Length>77</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>83.128.27.58 LEN=30 TOS=0x00 PREC=0x00 TTL=244 ID=27756 DF PROTO=ICMP TYPE=8 </m_sSection>
+              <m_nSectionPos>114</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>83.128.27.58</m_sSection>
+              <m_nSectionPos>114</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>IPv4</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Destination</m_sDisplayedFieldName>
+              <m_sFieldName>dst</m_sFieldName>
+              <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>LEN=</m_sSection>
+              <m_nSectionPos>127</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>LEN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>30</m_sSection>
+              <m_nSectionPos>131</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>len</m_sDisplayedFieldName>
+              <m_sFieldName>len</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TOS=0x00 PREC=0x00 TTL=244 ID=27756 DF</m_sSection>
+              <m_nSectionPos>134</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>PROTO=</m_sSection>
+              <m_nSectionPos>173</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>PROTO=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>ICMP</m_sSection>
+              <m_nSectionPos>179</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Protocol</m_sPatternName>
+              <m_sFieldType>protocol</m_sFieldType>
+              <m_sRegEx>udp|UDP|tcp|TCP|icmp|ICMP</m_sRegEx>
+              <m_sDisplayedFieldName>Protocol</m_sDisplayedFieldName>
+              <m_sFieldName>proto</m_sFieldName>
+              <m_sComment>Common protocols names - Don't forget to use mapping for these</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>protocol</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TYPE=</m_sSection>
+              <m_nSectionPos>184</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>TYPE=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>8</m_sSection>
+              <m_nSectionPos>189</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>icmp-type</m_sDisplayedFieldName>
+              <m_sFieldName>icmp-type</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 3</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>191</StartPos>
+          <Length>28</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>CODE=0 ID=51724 SEQ=402 \012</m_sSection>
+              <m_nSectionPos>191</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>CODE=</m_sSection>
+              <m_nSectionPos>191</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>CODE=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>0</m_sSection>
+              <m_nSectionPos>196</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>icmp-code</m_sDisplayedFieldName>
+              <m_sFieldName>icmp-code</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>ID=51724 SEQ=402 \012</m_sSection>
+              <m_nSectionPos>198</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+      </Groups>
+    </Pattern>
+    <Pattern>
+      <SampleName>IPtables IPv6 TCP/UDP</SampleName>
+      <LogSample>Aug 14 14:58:01 kernel: DROP IN=v6tun0 OUT= MAC=e0:49:ee:63:00:a2:de:48:00:01:02:08:00:45:00:00:50:76:4f:40:00:fc:29:6d:0a:d8:42:54:2e:53:80:1b:3a:60:00:00:00:00:14:06:36:26:20:01:01:40:36:21:40:00:10:00 TUNNEL=216.66.84.46-&gt;83.128.27.58 SRC=2620:0101:4036:2140:0010:0043:0140:0065 DST=2001:0470:1f14:0b53:0000:0000:0000:0002 LEN=60 TC=0 HOPLIMIT=54 FLOWLBL=0 PROTO=TCP SPT=443 DPT=62068 SEQ=1339872245 ACK=168191470 WINDOW=14400 RES=0x00 ACK URGP=0 \012</LogSample>
+      <SampleType>ORDERED</SampleType>
+      <Checked>True</Checked>
+      <Groups>
+        <Group>
+          <m_sGroupName>First Group</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>0</StartPos>
+          <Length>242</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 14 14:58:01 kernel: DROP IN=v6tun0 OUT= MAC=e0:49:ee:63:00:a2:de:48:00:01:02:08:00:45:00:00:50:76:4f:40:00:fc:29:6d:0a:d8:42:54:2e:53:80:1b:3a:60:00:00:00:00:14:06:36:26:20:01:01:40:36:21:40:00:10:00 TUNNEL=216.66.84.46-&gt;83.128.27.58 SRC=</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 14 14:58:01</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Date Mmm dd hh:mm:ss</m_sPatternName>
+              <m_sRegEx>(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[ 	]+[0-9]+[ 	]+[0-9]+:[0-9]+:[0-9]+</m_sRegEx>
+              <m_sComment>Date and Time in format Mmm dd hh:mm:ss</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>kernel:</m_sSection>
+              <m_nSectionPos>16</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Word:</m_sPatternName>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*:</m_sRegEx>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DROP</m_sSection>
+              <m_nSectionPos>24</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>action</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>IN=</m_sSection>
+              <m_nSectionPos>29</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>IN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>v6tun0</m_sSection>
+              <m_nSectionPos>32</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>ifname</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Interface Name</m_sDisplayedFieldName>
+              <m_sFieldName>ifname</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>OUT= MAC=e0:49:ee:63:00:a2:de:48:00:01:02:08:00:45:00:00:50:76:4f:40:00:fc:29:6d:0a:d8:42:54:2e:53:80:1b:3a:60:00:00:00:00:14:06:36:26:20:01:01:40:36:21:40:00:10:00 TUNNEL=216.66.84.46-&gt;83.128.27.58</m_sSection>
+              <m_nSectionPos>39</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SRC=</m_sSection>
+              <m_nSectionPos>238</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>SRC=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 3</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>242</StartPos>
+          <Length>40</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2620:0101:4036:2140:0010:0043:0140:0065 </m_sSection>
+              <m_nSectionPos>242</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2620:0101:4036:2140:0010:0043:0140:0065</m_sSection>
+              <m_nSectionPos>242</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>IPv6</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}</m_sRegEx>
+              <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
+              <m_sFieldName>src</m_sFieldName>
+              <m_sComment>Any unix path</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 1</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>282</StartPos>
+          <Length>88</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=2001:0470:1f14:0b53:0000:0000:0000:0002 LEN=60 TC=0 HOPLIMIT=54 FLOWLBL=0 PROTO=TCP </m_sSection>
+              <m_nSectionPos>282</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=</m_sSection>
+              <m_nSectionPos>282</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>DST=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2001:0470:1f14:0b53:0000:0000:0000:0002</m_sSection>
+              <m_nSectionPos>286</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>IPv6</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}</m_sRegEx>
+              <m_sDisplayedFieldName>Destination</m_sDisplayedFieldName>
+              <m_sFieldName>dst</m_sFieldName>
+              <m_sComment>Any unix path</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>LEN=</m_sSection>
+              <m_nSectionPos>326</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>LEN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>60</m_sSection>
+              <m_nSectionPos>330</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>len</m_sDisplayedFieldName>
+              <m_sFieldName>len</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TC=0 HOPLIMIT=54 FLOWLBL=0</m_sSection>
+              <m_nSectionPos>333</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>PROTO=</m_sSection>
+              <m_nSectionPos>360</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>PROTO=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TCP</m_sSection>
+              <m_nSectionPos>366</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>protocol</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Protocol</m_sDisplayedFieldName>
+              <m_sFieldName>proto</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>protocol</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 4</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>370</StartPos>
+          <Length>8</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SPT=443 </m_sSection>
+              <m_nSectionPos>370</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SPT=</m_sSection>
+              <m_nSectionPos>370</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>SPT=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>443</m_sSection>
+              <m_nSectionPos>374</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>port</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Source Port</m_sDisplayedFieldName>
+              <m_sFieldName>s_port</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 2</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>378</StartPos>
+          <Length>76</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DPT=62068 SEQ=1339872245 ACK=168191470 WINDOW=14400 RES=0x00 ACK URGP=0 \012</m_sSection>
+              <m_nSectionPos>378</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DPT=</m_sSection>
+              <m_nSectionPos>378</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>DPT=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>62068</m_sSection>
+              <m_nSectionPos>382</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>port</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Service</m_sDisplayedFieldName>
+              <m_sFieldName>service</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SEQ=1339872245 ACK=168191470 WINDOW=14400 RES=0x00 ACK URGP=0 \012</m_sSection>
+              <m_nSectionPos>388</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+      </Groups>
+    </Pattern>
+    <Pattern>
+      <SampleName>IPtables IPv6 ICMP</SampleName>
+      <LogSample>Aug 15 07:32:22 kernel: ACCEPT IN=v6tun0 OUT= MAC=e0:49:ee:63:00:a2:de:48:00:01:02:08:00:45:00:00:7c:cb:5c:40:00:fc:29:17:d1:d8:42:54:2e:53:80:1b:3a:60:09:ab:bf:00:40:3a:40:20:01:04:70:1f:14:0b:53:00:00:00 TUNNEL=216.66.84.46-&gt;83.128.27.58 SRC=2001:0470:1f14:0b53:0000:0000:0000:0001 DST=2001:0470:1f14:0b53:0000:0000:0000:0002 LEN=104 TC=0 HOPLIMIT=64 FLOWLBL=633791 PROTO=ICMPv6 TYPE=128 CODE=0 ID=15616 SEQ=1 \012</LogSample>
+      <SampleType>ORDERED</SampleType>
+      <Checked>True</Checked>
+      <Groups>
+        <Group>
+          <m_sGroupName>First Group</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>0</StartPos>
+          <Length>244</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 15 07:32:22 kernel: ACCEPT IN=v6tun0 OUT= MAC=e0:49:ee:63:00:a2:de:48:00:01:02:08:00:45:00:00:7c:cb:5c:40:00:fc:29:17:d1:d8:42:54:2e:53:80:1b:3a:60:09:ab:bf:00:40:3a:40:20:01:04:70:1f:14:0b:53:00:00:00 TUNNEL=216.66.84.46-&gt;83.128.27.58 SRC=</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>Aug 15 07:32:22</m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Date Mmm dd hh:mm:ss</m_sPatternName>
+              <m_sRegEx>(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[ 	]+[0-9]+[ 	]+[0-9]+:[0-9]+:[0-9]+</m_sRegEx>
+              <m_sComment>Date and Time in format Mmm dd hh:mm:ss</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>kernel:</m_sSection>
+              <m_nSectionPos>16</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Word:</m_sPatternName>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*:</m_sRegEx>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>ACCEPT</m_sSection>
+              <m_nSectionPos>24</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>action</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>IN=</m_sSection>
+              <m_nSectionPos>31</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>IN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>v6tun0</m_sSection>
+              <m_nSectionPos>34</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>ifname</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Interface Name</m_sDisplayedFieldName>
+              <m_sFieldName>ifname</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>OUT= MAC=e0:49:ee:63:00:a2:de:48:00:01:02:08:00:45:00:00:7c:cb:5c:40:00:fc:29:17:d1:d8:42:54:2e:53:80:1b:3a:60:09:ab:bf:00:40:3a:40:20:01:04:70:1f:14:0b:53:00:00:00 TUNNEL=216.66.84.46-&gt;83.128.27.58</m_sSection>
+              <m_nSectionPos>41</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SRC=</m_sSection>
+              <m_nSectionPos>240</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>SRC=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 3</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>244</StartPos>
+          <Length>40</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2001:0470:1f14:0b53:0000:0000:0000:0001 </m_sSection>
+              <m_nSectionPos>244</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2001:0470:1f14:0b53:0000:0000:0000:0001</m_sSection>
+              <m_nSectionPos>244</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>IPv6</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}</m_sRegEx>
+              <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
+              <m_sFieldName>src</m_sFieldName>
+              <m_sComment>Any unix path</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 1</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>284</StartPos>
+          <Length>97</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=2001:0470:1f14:0b53:0000:0000:0000:0002 LEN=104 TC=0 HOPLIMIT=64 FLOWLBL=633791 PROTO=ICMPv6 </m_sSection>
+              <m_nSectionPos>284</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>DST=</m_sSection>
+              <m_nSectionPos>284</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>DST=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2001:0470:1f14:0b53:0000:0000:0000:0002</m_sSection>
+              <m_nSectionPos>288</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>IPv6</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}</m_sRegEx>
+              <m_sDisplayedFieldName>Destination</m_sDisplayedFieldName>
+              <m_sFieldName>dst</m_sFieldName>
+              <m_sComment>Any unix path</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>LEN=</m_sSection>
+              <m_nSectionPos>328</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>LEN=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>104</m_sSection>
+              <m_nSectionPos>332</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>len</m_sDisplayedFieldName>
+              <m_sFieldName>len</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TC=0 HOPLIMIT=64 FLOWLBL=633791</m_sSection>
+              <m_nSectionPos>336</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>PROTO=</m_sSection>
+              <m_nSectionPos>368</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>PROTO=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>ICMPv6</m_sSection>
+              <m_nSectionPos>374</m_nSectionPos>
+              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_sPatternName>Word</m_sPatternName>
+              <m_sFieldType>protocol</m_sFieldType>
+              <m_sRegEx>[a-zA-Z]+[0-9a-zA-Z_-]*</m_sRegEx>
+              <m_sDisplayedFieldName>Protocol</m_sDisplayedFieldName>
+              <m_sFieldName>proto</m_sFieldName>
+              <m_sComment>Any word without whitespace that begins with a letter</m_sComment>
+              <m_oValidValues />
+              <m_sDictionaryName>protocol</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 4</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>381</StartPos>
+          <Length>9</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TYPE=128 </m_sSection>
+              <m_nSectionPos>381</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>TYPE=</m_sSection>
+              <m_nSectionPos>381</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>TYPE=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>128</m_sSection>
+              <m_nSectionPos>386</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>icmp-type</m_sDisplayedFieldName>
+              <m_sFieldName>icmp-type</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 2</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>390</StartPos>
+          <Length>26</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>CODE=0 ID=15616 SEQ=1 \012</m_sSection>
+              <m_nSectionPos>390</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>CODE=</m_sSection>
+              <m_nSectionPos>390</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>CODE=</m_sRegEx>
+              <m_sComment>matches the section as is</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>0</m_sSection>
+              <m_nSectionPos>395</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>icmp-code</m_sDisplayedFieldName>
+              <m_sFieldName>icmp-code</m_sFieldName>
+              <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>ID=15616 SEQ=1 \012</m_sSection>
+              <m_nSectionPos>397</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Any possible value - Don't use unless you know what your'e doing</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+      </Groups>
+    </Pattern>
+  </Patterns>
+  <FieldNames>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>action</m_sName>
+      <m_sDisplayedName>Action</m_sDisplayedName>
+      <m_sType>action</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>attack</m_sName>
+      <m_sDisplayedName>Attack name</m_sDisplayedName>
+      <m_sType>string</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>dst</m_sName>
+      <m_sDisplayedName>Destination</m_sDisplayedName>
+      <m_sType>ipaddr</m_sType>
+      <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>device_Severity</m_sName>
+      <m_sDisplayedName>Device Severity</m_sDisplayedName>
+      <m_sType>string</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>icmp-code</m_sName>
+      <m_sDisplayedName>icmp-code</m_sDisplayedName>
+      <m_sType>string</m_sType>
+      <m_sRegEx>.*</m_sRegEx>
+      <outOfTheBox>false</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>icmp-type</m_sName>
+      <m_sDisplayedName>icmp-type</m_sDisplayedName>
+      <m_sType>string</m_sType>
+      <m_sRegEx>.*</m_sRegEx>
+      <outOfTheBox>false</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>ifdir</m_sName>
+      <m_sDisplayedName>Interface Direction</m_sDisplayedName>
+      <m_sType>ifdir</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>ifname</m_sName>
+      <m_sDisplayedName>Interface Name</m_sDisplayedName>
+      <m_sType>ifname</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>len</m_sName>
+      <m_sDisplayedName>len</m_sDisplayedName>
+      <m_sType>string</m_sType>
+      <m_sRegEx>.*</m_sRegEx>
+      <outOfTheBox>false</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>origin</m_sName>
+      <m_sDisplayedName>Origin</m_sDisplayedName>
+      <m_sType>ipaddr</m_sType>
+      <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>proto</m_sName>
+      <m_sDisplayedName>Protocol</m_sDisplayedName>
+      <m_sType>protocol</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>service</m_sName>
+      <m_sDisplayedName>Service</m_sDisplayedName>
+      <m_sType>port</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>src</m_sName>
+      <m_sDisplayedName>Source</m_sDisplayedName>
+      <m_sType>ipaddr</m_sType>
+      <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+    <FieldName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m_sName>s_port</m_sName>
+      <m_sDisplayedName>Source Port</m_sDisplayedName>
+      <m_sType>port</m_sType>
+      <outOfTheBox>true</outOfTheBox>
+    </FieldName>
+  </FieldNames>
+  <RecentFiles>
+    <string>C:\Users\hvdk\Downloads\Check Point\syslogparser.txt</string>
+    <string>C:\Users\hvdk\Downloads\Check Point\syslogparser2.txt</string>
+    <string>C:\Users\hvdk\Downloads\Check Point\syslog-20180108.log</string>
+  </RecentFiles>
+</ParserGUI>
