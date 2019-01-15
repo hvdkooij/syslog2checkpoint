@@ -6,3 +6,5 @@ Installation instructions:
  3. `addParsingFile -p pfSense.C -d pfSense_dict.ini`
  
  ## WARNING: This will stop and restart your SmartCenter!!!
+
+Moredetails about the log format can be found on [Filter Log Format for pfSense 2.2](https://www.netgate.com/docs/pfsense/monitoring/filter-log-format-for-pfsense-2-2.html)
