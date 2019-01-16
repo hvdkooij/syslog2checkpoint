@@ -11,7 +11,7 @@ I am working a bit on:
 
 | Parser | Status |
 | --- | --- |
-| BSF | Under development |
+| BSF | Under development, very limited use |
 | iptables | Workable (no IPv6 support yet) |
 | pfSense | Workable (no IPv6 support yet) |
 
