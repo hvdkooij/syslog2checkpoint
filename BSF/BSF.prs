@@ -369,10 +369,76 @@
         <Value>accept</Value>
       </subdict>
     </dict>
+    <dict>
+      <Key>SCAN Action</Key>
+      <subdict>
+        <Key>0</Key>
+        <Value>accept</Value>
+      </subdict>
+      <subdict>
+        <Key>1</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>2</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>3</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>4</Key>
+        <Value>accept</Value>
+      </subdict>
+      <subdict>
+        <Key>5</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>6</Key>
+        <Value>accept</Value>
+      </subdict>
+      <subdict>
+        <Key>7</Key>
+        <Value>accept</Value>
+      </subdict>
+      <subdict>
+        <Key>8</Key>
+        <Value>encrypted</Value>
+      </subdict>
+      <subdict>
+        <Key>9</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>10</Key>
+        <Value>accept</Value>
+      </subdict>
+    </dict>
+    <dict>
+      <Key>SEND action</Key>
+      <subdict>
+        <Key>1</Key>
+        <Value>accept</Value>
+      </subdict>
+      <subdict>
+        <Key>2</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>3</Key>
+        <Value>reject</Value>
+      </subdict>
+      <subdict>
+        <Key>4</Key>
+        <Value>expired</Value>
+      </subdict>
+    </dict>
   </Dictionary>
   <Switches />
   <ProductInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <productName>AntiSpam</productName>
+    <productName>BSF</productName>
     <parseByFormat>true</parseByFormat>
     <productregEx>(inbound/pass(1|2)|scan|outbound/smtp):</productregEx>
     <isRegEx>true</isRegEx>
@@ -395,17 +461,19 @@
               <m_nSectionPos>0</m_nSectionPos>
               <m_nBracketIndex>0</m_nBracketIndex>
               <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>true</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection> </m_sSection>
+              <m_sSection />
               <m_nSectionPos>0</m_nSectionPos>
               <m_nBracketIndex>1</m_nBracketIndex>
               <m_sPatternName>WhiteSpaces</m_sPatternName>
               <m_sRegEx>[ 	]*</m_sRegEx>
               <m_sComment>Whitespace</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -420,6 +488,7 @@
               <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
               <m_sFieldName>action</m_sFieldName>
               <m_sComment>SCAN</m_sComment>
+              <m_oValidValues />
               <m_sDictionaryName>BSF_action</m_sDictionaryName>
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
@@ -432,6 +501,7 @@
               <m_sPatternName>Unix Path</m_sPatternName>
               <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
               <m_sComment>Host</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -446,6 +516,7 @@
               <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
               <m_sFieldName>src</m_sFieldName>
               <m_sComment>Source IP</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -460,6 +531,7 @@
               <m_sDisplayedFieldName>email_id</m_sDisplayedFieldName>
               <m_sFieldName>email_id</m_sFieldName>
               <m_sComment>Barracuda Message ID</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -471,6 +543,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>START</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -482,6 +555,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>END</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -508,10 +582,10 @@
           <m_sGroupName>group 1</m_sGroupName>
           <ReadOnly>False</ReadOnly>
           <StartPos>111</StartPos>
-          <Length>126</Length>
+          <Length>124</Length>
           <Sections>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>- bounce-mc.us10_39724129.1417785-hugo=vanderkooij.org@mail218.atl171.mcdlv.net hugo@vanderkooij.org 0.0699500961661639 0 0 - </m_sSection>
+              <m_sSection>- bounce-mc.us10_39724129.1417785-hugo=vanderkooij.org@mail218.atl171.mcdlv.net hugo@vanderkooij.org 0.0699500961661639 0 0 </m_sSection>
               <m_nSectionPos>111</m_nSectionPos>
               <m_nBracketIndex>0</m_nBracketIndex>
               <m_sComment>Group Title</m_sComment>
@@ -526,6 +600,7 @@
               <m_sPatternName>Unix Path</m_sPatternName>
               <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
               <m_sComment>Encrypted?</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -540,6 +615,7 @@
               <m_sDisplayedFieldName>from</m_sDisplayedFieldName>
               <m_sFieldName>from</m_sFieldName>
               <m_sComment>Sender</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -554,6 +630,7 @@
               <m_sDisplayedFieldName>to</m_sDisplayedFieldName>
               <m_sFieldName>to</m_sFieldName>
               <m_sComment>Recipient</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -565,6 +642,7 @@
               <m_sPatternName>Score</m_sPatternName>
               <m_sRegEx>((-|)[0-9.]+|-)</m_sRegEx>
               <m_sComment>Score</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -574,8 +652,12 @@
               <m_nSectionPos>231</m_nSectionPos>
               <m_nBracketIndex>7</m_nBracketIndex>
               <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
               <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
               <m_sComment>Action</m_sComment>
+              <m_sDictionaryName>SCAN Action</m_sDictionaryName>
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -587,17 +669,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>Reason</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>-</m_sSection>
-              <m_nSectionPos>235</m_nSectionPos>
-              <m_nBracketIndex>9</m_nBracketIndex>
-              <m_sPatternName>Non Whitespace String</m_sPatternName>
-              <m_sRegEx>[^ 	]+</m_sRegEx>
-              <m_sComment>Reason Extra</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -607,12 +679,12 @@
         <Group>
           <m_sGroupName>group 2</m_sGroupName>
           <ReadOnly>False</ReadOnly>
-          <StartPos>237</StartPos>
-          <Length>84</Length>
+          <StartPos>235</StartPos>
+          <Length>86</Length>
           <Sections>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>SZ:56985 SUBJ:=?utf-8?Q?What=20happened=20to=20the=20lingerie=20challenge=3F=C2=A0?=</m_sSection>
-              <m_nSectionPos>237</m_nSectionPos>
+              <m_sSection>- SZ:56985 SUBJ:=?utf-8?Q?What=20happened=20to=20the=20lingerie=20challenge=3F=C2=A0?=</m_sSection>
+              <m_nSectionPos>235</m_nSectionPos>
               <m_nBracketIndex>0</m_nBracketIndex>
               <m_sComment>Group Title</m_sComment>
               <m_bPreParsed>false</m_bPreParsed>
@@ -620,12 +692,25 @@
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>-</m_sSection>
+              <m_nSectionPos>235</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Non Whitespace String</m_sPatternName>
+              <m_sRegEx>[^ 	]+</m_sRegEx>
+              <m_sComment>Reason Extra</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>SZ:</m_sSection>
               <m_nSectionPos>237</m_nSectionPos>
-              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_nBracketIndex>2</m_nBracketIndex>
               <m_sPatternName>Static Text</m_sPatternName>
               <m_sRegEx>SZ:</m_sRegEx>
               <m_sComment>Size Prefix</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -633,10 +718,11 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>56985</m_sSection>
               <m_nSectionPos>240</m_nSectionPos>
-              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_nBracketIndex>3</m_nBracketIndex>
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>Size</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -644,13 +730,14 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>SUBJ:=?utf-8?Q?What=20happened=20to=20the=20lingerie=20challenge=3F=C2=A0?=</m_sSection>
               <m_nSectionPos>246</m_nSectionPos>
-              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_nBracketIndex>4</m_nBracketIndex>
               <m_sPatternName>Anything</m_sPatternName>
               <m_sFieldType>string</m_sFieldType>
               <m_sRegEx>.*</m_sRegEx>
               <m_sDisplayedFieldName>message_info</m_sDisplayedFieldName>
               <m_sFieldName>message_info</m_sFieldName>
               <m_sComment>Stuff</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -676,17 +763,19 @@
               <m_nSectionPos>0</m_nSectionPos>
               <m_nBracketIndex>0</m_nBracketIndex>
               <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>true</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection> </m_sSection>
+              <m_sSection />
               <m_nSectionPos>0</m_nSectionPos>
               <m_nBracketIndex>1</m_nBracketIndex>
               <m_sPatternName>WhiteSpaces</m_sPatternName>
               <m_sRegEx>[ 	]*</m_sRegEx>
               <m_sComment>Whitespace</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -698,6 +787,7 @@
               <m_sPatternName>Static Text</m_sPatternName>
               <m_sRegEx>outbound/smtp</m_sRegEx>
               <m_sComment>OUTBOUND/SMTP</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -712,6 +802,7 @@
               <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
               <m_sFieldName>src</m_sFieldName>
               <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -726,6 +817,7 @@
               <m_sDisplayedFieldName>email_id</m_sDisplayedFieldName>
               <m_sFieldName>email_id</m_sFieldName>
               <m_sComment>Barracuda Message ID</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -737,6 +829,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>Action</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -748,6 +841,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>Reason</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -803,8 +897,12 @@
               <m_nSectionPos>76</m_nSectionPos>
               <m_nBracketIndex>1</m_nBracketIndex>
               <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
               <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
               <m_sComment>Action</m_sComment>
+              <m_sDictionaryName>SEND action</m_sDictionaryName>
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -816,6 +914,7 @@
               <m_sPatternName>Unix Path</m_sPatternName>
               <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
               <m_sComment>Queue ID</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -827,6 +926,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>SMTP Response code</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -841,206 +941,7 @@
               <m_sDisplayedFieldName>message_info</m_sDisplayedFieldName>
               <m_sFieldName>message_info</m_sFieldName>
               <m_sComment>SMTP response string</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-          </Sections>
-        </Group>
-      </Groups>
-    </Pattern>
-    <Pattern>
-      <SampleName>INBOUND/PASS1 RECV</SampleName>
-      <LogSample> inbound/pass1: www.newark.co.jp[182.50.104.120] 1533081172-0f67e0570d6b840001-x2fdcC 1533081175 1533081206 RECV wperb25@juno.com hugo@vanderkooij.org 2 62 182.50.104.120</LogSample>
-      <SampleType>ORDERED</SampleType>
-      <Checked>True</Checked>
-      <Groups>
-        <Group>
-          <m_sGroupName>First Group</m_sGroupName>
-          <ReadOnly>False</ReadOnly>
-          <StartPos>0</StartPos>
-          <Length>113</Length>
-          <Sections>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection> inbound/pass1: www.newark.co.jp[182.50.104.120] 1533081172-0f67e0570d6b840001-x2fdcC 1533081175 1533081206 RECV </m_sSection>
-              <m_nSectionPos>0</m_nSectionPos>
-              <m_nBracketIndex>0</m_nBracketIndex>
-              <m_sComment>Group Title</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>true</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection> </m_sSection>
-              <m_nSectionPos>0</m_nSectionPos>
-              <m_nBracketIndex>1</m_nBracketIndex>
-              <m_sPatternName>WhiteSpaces</m_sPatternName>
-              <m_sRegEx>[ 	]*</m_sRegEx>
-              <m_sComment>Whitespace</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>inbound/pass1</m_sSection>
-              <m_nSectionPos>1</m_nSectionPos>
-              <m_nBracketIndex>2</m_nBracketIndex>
-              <m_sPatternName>Static Text</m_sPatternName>
-              <m_sRegEx>inbound/pass1</m_sRegEx>
-              <m_sComment>Source Hostname</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>www.newark.co.jp</m_sSection>
-              <m_nSectionPos>16</m_nSectionPos>
-              <m_nBracketIndex>3</m_nBracketIndex>
-              <m_sPatternName>Unix Path</m_sPatternName>
-              <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
-              <m_sComment>Source Hostname</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>182.50.104.120</m_sSection>
-              <m_nSectionPos>33</m_nSectionPos>
-              <m_nBracketIndex>4</m_nBracketIndex>
-              <m_sPatternName>IPv4</m_sPatternName>
-              <m_sFieldType>ipaddr</m_sFieldType>
-              <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
-              <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
-              <m_sFieldName>src</m_sFieldName>
-              <m_sComment>V4 IP address</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>1533081172-0f67e0570d6b840001-x2fdcC</m_sSection>
-              <m_nSectionPos>49</m_nSectionPos>
-              <m_nBracketIndex>5</m_nBracketIndex>
-              <m_sPatternName>Unix Path</m_sPatternName>
-              <m_sFieldType>string</m_sFieldType>
-              <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
-              <m_sDisplayedFieldName>email_id</m_sDisplayedFieldName>
-              <m_sFieldName>email_id</m_sFieldName>
-              <m_sComment>Barracuda Message ID</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>1533081175</m_sSection>
-              <m_nSectionPos>86</m_nSectionPos>
-              <m_nBracketIndex>6</m_nBracketIndex>
-              <m_sPatternName>Number</m_sPatternName>
-              <m_sRegEx>[0-9]+</m_sRegEx>
-              <m_sComment>Start</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>1533081206</m_sSection>
-              <m_nSectionPos>97</m_nSectionPos>
-              <m_nBracketIndex>7</m_nBracketIndex>
-              <m_sPatternName>Number</m_sPatternName>
-              <m_sRegEx>[0-9]+</m_sRegEx>
-              <m_sComment>End</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>RECV</m_sSection>
-              <m_nSectionPos>108</m_nSectionPos>
-              <m_nBracketIndex>8</m_nBracketIndex>
-              <m_sPatternName>Valid Values</m_sPatternName>
-              <m_sRegEx>RECV</m_sRegEx>
-              <m_sComment>Service</m_sComment>
-              <m_oValidValues>
-                <string>RECV</string>
-              </m_oValidValues>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-          </Sections>
-        </Group>
-        <Group>
-          <m_sGroupName>group 1</m_sGroupName>
-          <ReadOnly>False</ReadOnly>
-          <StartPos>113</StartPos>
-          <Length>57</Length>
-          <Sections>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>wperb25@juno.com hugo@vanderkooij.org 2 62 182.50.104.120</m_sSection>
-              <m_nSectionPos>113</m_nSectionPos>
-              <m_nBracketIndex>0</m_nBracketIndex>
-              <m_sComment>Group Title</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>true</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>wperb25@juno.com</m_sSection>
-              <m_nSectionPos>113</m_nSectionPos>
-              <m_nBracketIndex>1</m_nBracketIndex>
-              <m_sPatternName>Non Whitespace String</m_sPatternName>
-              <m_sFieldType>string</m_sFieldType>
-              <m_sRegEx>[^ 	]+</m_sRegEx>
-              <m_sDisplayedFieldName>from</m_sDisplayedFieldName>
-              <m_sFieldName>from</m_sFieldName>
-              <m_sComment>Sender</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>hugo@vanderkooij.org</m_sSection>
-              <m_nSectionPos>130</m_nSectionPos>
-              <m_nBracketIndex>2</m_nBracketIndex>
-              <m_sPatternName>Non Whitespace String</m_sPatternName>
-              <m_sFieldType>string</m_sFieldType>
-              <m_sRegEx>[^ 	]+</m_sRegEx>
-              <m_sDisplayedFieldName>to</m_sDisplayedFieldName>
-              <m_sFieldName>to</m_sFieldName>
-              <m_sComment>Recipient</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>2</m_sSection>
-              <m_nSectionPos>151</m_nSectionPos>
-              <m_nBracketIndex>3</m_nBracketIndex>
-              <m_sPatternName>Number</m_sPatternName>
-              <m_sRegEx>[0-9]+</m_sRegEx>
-              <m_sComment>Action</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>62</m_sSection>
-              <m_nSectionPos>153</m_nSectionPos>
-              <m_nBracketIndex>4</m_nBracketIndex>
-              <m_sPatternName>Number</m_sPatternName>
-              <m_sRegEx>[0-9]+</m_sRegEx>
-              <m_sComment>Reason</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>182.50.104.120</m_sSection>
-              <m_nSectionPos>156</m_nSectionPos>
-              <m_nBracketIndex>5</m_nBracketIndex>
-              <m_sPatternName>Anything</m_sPatternName>
-              <m_sRegEx>.*</m_sRegEx>
-              <m_sComment>Anything</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1059,24 +960,26 @@
           <m_sGroupName>First Group</m_sGroupName>
           <ReadOnly>False</ReadOnly>
           <StartPos>0</StartPos>
-          <Length>109</Length>
+          <Length>104</Length>
           <Sections>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection> inbound/pass1: exigento.com[148.251.125.72] 1533089577-0f67e0570c6b8d0001-x2fdcC 1533089577 1533089613 SCAN </m_sSection>
+              <m_sSection> inbound/pass1: exigento.com[148.251.125.72] 1533089577-0f67e0570c6b8d0001-x2fdcC 1533089577 1533089613 </m_sSection>
               <m_nSectionPos>0</m_nSectionPos>
               <m_nBracketIndex>0</m_nBracketIndex>
               <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>true</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection> </m_sSection>
+              <m_sSection />
               <m_nSectionPos>0</m_nSectionPos>
               <m_nBracketIndex>1</m_nBracketIndex>
               <m_sPatternName>WhiteSpaces</m_sPatternName>
               <m_sRegEx>[ 	]*</m_sRegEx>
               <m_sComment>Whitespace</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1088,6 +991,7 @@
               <m_sPatternName>Static Text</m_sPatternName>
               <m_sRegEx>inbound/pass1</m_sRegEx>
               <m_sComment>Source Hostname</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1099,6 +1003,7 @@
               <m_sPatternName>Unix Path</m_sPatternName>
               <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
               <m_sComment>Source Hostname</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1113,6 +1018,7 @@
               <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
               <m_sFieldName>src</m_sFieldName>
               <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1127,6 +1033,7 @@
               <m_sDisplayedFieldName>email_id</m_sDisplayedFieldName>
               <m_sFieldName>email_id</m_sFieldName>
               <m_sComment>Barracuda Message ID</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1138,6 +1045,7 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>Start</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1149,14 +1057,33 @@
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>End</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 3</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>104</StartPos>
+          <Length>62</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>SCAN ENC un.comp.office@rekord.rv.ua hugo@vanderkooij.org - 2 </m_sSection>
+              <m_nSectionPos>104</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>SCAN</m_sSection>
               <m_nSectionPos>104</m_nSectionPos>
-              <m_nBracketIndex>8</m_nBracketIndex>
+              <m_nBracketIndex>1</m_nBracketIndex>
               <m_sPatternName>Valid Values</m_sPatternName>
               <m_sRegEx>SCAN</m_sRegEx>
               <m_sComment>Service</m_sComment>
@@ -1167,27 +1094,10 @@
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
-          </Sections>
-        </Group>
-        <Group>
-          <m_sGroupName>group 1</m_sGroupName>
-          <ReadOnly>False</ReadOnly>
-          <StartPos>109</StartPos>
-          <Length>60</Length>
-          <Sections>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>ENC un.comp.office@rekord.rv.ua hugo@vanderkooij.org - 2 60 </m_sSection>
-              <m_nSectionPos>109</m_nSectionPos>
-              <m_nBracketIndex>0</m_nBracketIndex>
-              <m_sComment>Group Title</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>true</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>ENC</m_sSection>
               <m_nSectionPos>109</m_nSectionPos>
-              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_nBracketIndex>2</m_nBracketIndex>
               <m_sPatternName>Valid Values</m_sPatternName>
               <m_sRegEx>ENC|-</m_sRegEx>
               <m_sComment>Encrypted?</m_sComment>
@@ -1202,13 +1112,14 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>un.comp.office@rekord.rv.ua</m_sSection>
               <m_nSectionPos>113</m_nSectionPos>
-              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_nBracketIndex>3</m_nBracketIndex>
               <m_sPatternName>Non Whitespace String</m_sPatternName>
               <m_sFieldType>string</m_sFieldType>
               <m_sRegEx>[^ 	]+</m_sRegEx>
               <m_sDisplayedFieldName>from</m_sDisplayedFieldName>
               <m_sFieldName>from</m_sFieldName>
               <m_sComment>Sender</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1216,13 +1127,14 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>hugo@vanderkooij.org</m_sSection>
               <m_nSectionPos>141</m_nSectionPos>
-              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_nBracketIndex>4</m_nBracketIndex>
               <m_sPatternName>Non Whitespace String</m_sPatternName>
               <m_sFieldType>string</m_sFieldType>
               <m_sRegEx>[^ 	]+</m_sRegEx>
               <m_sDisplayedFieldName>to</m_sDisplayedFieldName>
               <m_sFieldName>to</m_sFieldName>
               <m_sComment>Recipient</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1230,10 +1142,11 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>-</m_sSection>
               <m_nSectionPos>162</m_nSectionPos>
-              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_nBracketIndex>5</m_nBracketIndex>
               <m_sPatternName>Score</m_sPatternName>
               <m_sRegEx>((-|)[0-9.]+|-)</m_sRegEx>
               <m_sComment>Score</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1241,21 +1154,14 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>2</m_sSection>
               <m_nSectionPos>164</m_nSectionPos>
-              <m_nBracketIndex>7</m_nBracketIndex>
-              <m_sPatternName>Number</m_sPatternName>
-              <m_sRegEx>[0-9]+</m_sRegEx>
-              <m_sComment>Action</m_sComment>
-              <m_bPreParsed>false</m_bPreParsed>
-              <m_bGroupHeader>false</m_bGroupHeader>
-              <m_oSectionType>FIELD</m_oSectionType>
-            </SectionParsingData>
-            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>60</m_sSection>
-              <m_nSectionPos>166</m_nSectionPos>
               <m_nBracketIndex>8</m_nBracketIndex>
               <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
               <m_sRegEx>[0-9]+</m_sRegEx>
-              <m_sComment>Reason</m_sComment>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
+              <m_sComment>Action</m_sComment>
+              <m_sDictionaryName>SCAN Action</m_sDictionaryName>
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1265,12 +1171,12 @@
         <Group>
           <m_sGroupName>group 2</m_sGroupName>
           <ReadOnly>False</ReadOnly>
-          <StartPos>169</StartPos>
-          <Length>73</Length>
+          <StartPos>166</StartPos>
+          <Length>76</Length>
           <Sections>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-              <m_sSection>*Phishing.Intl.Money.Scams SZ:3663 SUBJ:Your payment compensation 148..72</m_sSection>
-              <m_nSectionPos>169</m_nSectionPos>
+              <m_sSection>60 *Phishing.Intl.Money.Scams SZ:3663 SUBJ:Your payment compensation 148..72</m_sSection>
+              <m_nSectionPos>166</m_nSectionPos>
               <m_nBracketIndex>0</m_nBracketIndex>
               <m_sComment>Group Title</m_sComment>
               <m_bPreParsed>false</m_bPreParsed>
@@ -1278,12 +1184,25 @@
               <m_oSectionType>FIELD</m_oSectionType>
             </SectionParsingData>
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>60</m_sSection>
+              <m_nSectionPos>166</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sComment>Reason</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>*Phishing.Intl.Money.Scams</m_sSection>
               <m_nSectionPos>169</m_nSectionPos>
-              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_nBracketIndex>2</m_nBracketIndex>
               <m_sPatternName>Non Whitespace String</m_sPatternName>
               <m_sRegEx>[^ 	]+</m_sRegEx>
               <m_sComment>ReasonExtra</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1291,10 +1210,11 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>SZ:</m_sSection>
               <m_nSectionPos>196</m_nSectionPos>
-              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_nBracketIndex>3</m_nBracketIndex>
               <m_sPatternName>Static Text</m_sPatternName>
               <m_sRegEx>SZ:</m_sRegEx>
               <m_sComment>Size prefix</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1302,10 +1222,11 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>3663</m_sSection>
               <m_nSectionPos>199</m_nSectionPos>
-              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_nBracketIndex>4</m_nBracketIndex>
               <m_sPatternName>Number</m_sPatternName>
               <m_sRegEx>[0-9]+</m_sRegEx>
               <m_sComment>Any natural number</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1313,13 +1234,231 @@
             <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
               <m_sSection>SUBJ:Your payment compensation 148..72</m_sSection>
               <m_nSectionPos>204</m_nSectionPos>
-              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_nBracketIndex>5</m_nBracketIndex>
               <m_sPatternName>Anything</m_sPatternName>
               <m_sFieldType>string</m_sFieldType>
               <m_sRegEx>.*</m_sRegEx>
               <m_sDisplayedFieldName>message_info</m_sDisplayedFieldName>
               <m_sFieldName>message_info</m_sFieldName>
               <m_sComment>Info</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+      </Groups>
+    </Pattern>
+    <Pattern>
+      <SampleName>INBOUND/PASS1 RECV</SampleName>
+      <LogSample> inbound/pass1: www.newark.co.jp[182.50.104.120] 1533081172-0f67e0570d6b840001-x2fdcC 1533081175 1533081206 RECV wperb25@juno.com hugo@vanderkooij.org 2 62 182.50.104.120</LogSample>
+      <SampleType>ORDERED</SampleType>
+      <Checked>True</Checked>
+      <Groups>
+        <Group>
+          <m_sGroupName>First Group</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>0</StartPos>
+          <Length>108</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection> inbound/pass1: www.newark.co.jp[182.50.104.120] 1533081172-0f67e0570d6b840001-x2fdcC 1533081175 1533081206 </m_sSection>
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection />
+              <m_nSectionPos>0</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>WhiteSpaces</m_sPatternName>
+              <m_sRegEx>[ 	]*</m_sRegEx>
+              <m_sComment>Whitespace</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>inbound/pass1</m_sSection>
+              <m_nSectionPos>1</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Static Text</m_sPatternName>
+              <m_sRegEx>inbound/pass1</m_sRegEx>
+              <m_sComment>Source Hostname</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>www.newark.co.jp</m_sSection>
+              <m_nSectionPos>16</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Unix Path</m_sPatternName>
+              <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
+              <m_sComment>Source Hostname</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>182.50.104.120</m_sSection>
+              <m_nSectionPos>33</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>IPv4</m_sPatternName>
+              <m_sFieldType>ipaddr</m_sFieldType>
+              <m_sRegEx>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Source</m_sDisplayedFieldName>
+              <m_sFieldName>src</m_sFieldName>
+              <m_sComment>V4 IP address</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>1533081172-0f67e0570d6b840001-x2fdcC</m_sSection>
+              <m_nSectionPos>49</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Unix Path</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[0-9a-zA-Z_./-]+</m_sRegEx>
+              <m_sDisplayedFieldName>email_id</m_sDisplayedFieldName>
+              <m_sFieldName>email_id</m_sFieldName>
+              <m_sComment>Barracuda Message ID</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>1533081175</m_sSection>
+              <m_nSectionPos>86</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sComment>Start</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>1533081206</m_sSection>
+              <m_nSectionPos>97</m_nSectionPos>
+              <m_nBracketIndex>7</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sComment>End</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+          </Sections>
+        </Group>
+        <Group>
+          <m_sGroupName>group 2</m_sGroupName>
+          <ReadOnly>False</ReadOnly>
+          <StartPos>108</StartPos>
+          <Length>62</Length>
+          <Sections>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>RECV wperb25@juno.com hugo@vanderkooij.org 2 62 182.50.104.120</m_sSection>
+              <m_nSectionPos>108</m_nSectionPos>
+              <m_nBracketIndex>0</m_nBracketIndex>
+              <m_sComment>Group Title</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>true</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>RECV</m_sSection>
+              <m_nSectionPos>108</m_nSectionPos>
+              <m_nBracketIndex>1</m_nBracketIndex>
+              <m_sPatternName>Valid Values</m_sPatternName>
+              <m_sRegEx>RECV</m_sRegEx>
+              <m_sComment>Service</m_sComment>
+              <m_oValidValues>
+                <string>RECV</string>
+              </m_oValidValues>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>wperb25@juno.com</m_sSection>
+              <m_nSectionPos>113</m_nSectionPos>
+              <m_nBracketIndex>2</m_nBracketIndex>
+              <m_sPatternName>Non Whitespace String</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[^ 	]+</m_sRegEx>
+              <m_sDisplayedFieldName>from</m_sDisplayedFieldName>
+              <m_sFieldName>from</m_sFieldName>
+              <m_sComment>Sender</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>hugo@vanderkooij.org</m_sSection>
+              <m_nSectionPos>130</m_nSectionPos>
+              <m_nBracketIndex>3</m_nBracketIndex>
+              <m_sPatternName>Non Whitespace String</m_sPatternName>
+              <m_sFieldType>string</m_sFieldType>
+              <m_sRegEx>[^ 	]+</m_sRegEx>
+              <m_sDisplayedFieldName>to</m_sDisplayedFieldName>
+              <m_sFieldName>to</m_sFieldName>
+              <m_sComment>Recipient</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>2</m_sSection>
+              <m_nSectionPos>151</m_nSectionPos>
+              <m_nBracketIndex>4</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sFieldType>action</m_sFieldType>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sDisplayedFieldName>Action</m_sDisplayedFieldName>
+              <m_sFieldName>action</m_sFieldName>
+              <m_sComment>Action</m_sComment>
+              <m_sDictionaryName>SCAN Action</m_sDictionaryName>
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>62</m_sSection>
+              <m_nSectionPos>153</m_nSectionPos>
+              <m_nBracketIndex>5</m_nBracketIndex>
+              <m_sPatternName>Number</m_sPatternName>
+              <m_sRegEx>[0-9]+</m_sRegEx>
+              <m_sComment>Reason</m_sComment>
+              <m_oValidValues />
+              <m_bPreParsed>false</m_bPreParsed>
+              <m_bGroupHeader>false</m_bGroupHeader>
+              <m_oSectionType>FIELD</m_oSectionType>
+            </SectionParsingData>
+            <SectionParsingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+              <m_sSection>182.50.104.120</m_sSection>
+              <m_nSectionPos>156</m_nSectionPos>
+              <m_nBracketIndex>6</m_nBracketIndex>
+              <m_sPatternName>Anything</m_sPatternName>
+              <m_sRegEx>.*</m_sRegEx>
+              <m_sComment>Anything</m_sComment>
+              <m_oValidValues />
               <m_bPreParsed>false</m_bPreParsed>
               <m_bGroupHeader>false</m_bGroupHeader>
               <m_oSectionType>FIELD</m_oSectionType>
@@ -1429,8 +1568,8 @@
     </FieldName>
   </FieldNames>
   <RecentFiles>
-    <string>C:\Users\hvdk\Downloads\Check Point\Syslog\BSF\Samples\20180801-10.0.11.10-mail.txt</string>
-    <string>C:\Users\hvdk\Downloads\Check Point\Syslog\BSF\Samples\20180802-10.0.11.10-mail.txt</string>
     <string>C:\Users\hvdk\Downloads\Check Point\Syslog\BSF\Samples\20180803-10.0.11.10-mail.txt</string>
+    <string>C:\Users\hvdk\Downloads\Check Point\Syslog\BSF\Samples\20180804-10.0.11.10-mail.txt</string>
+    <string>C:\Users\hvdk\Downloads\Check Point\Syslog\BSF\Samples\20180812-10.0.11.10-mail.txt</string>
   </RecentFiles>
 </ParserGUI>
