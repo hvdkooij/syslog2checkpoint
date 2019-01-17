@@ -20,13 +20,13 @@ Most particularly by running a fwm logexport and fetching the first line
 | ProductFamily | N/A |
 | inzone | N/A |
 | outzone | N/A |
-| rule | N/A |
-| rule_uid | N/A |
-| rule_name | N/A |
+| rule | Security policy rule number |
+| rule_uid | UID of policy rule |
+| rule_name | Name of policy rule |
 | service_id | N/A |
-| src | N/A |
-| dst | N/A |
-| proto | N/A |
+| src | Source IP address |
+| dst | Destination IP Address |
+| proto | IP Protocol (number) |
 | scheme: | N/A |
 | methods: | N/A |
 | peer gateway | N/A |
@@ -35,15 +35,15 @@ Most particularly by running a fwm logexport and fetching the first line
 | community | N/A |
 | fw_subproduct | N/A |
 | vpn_feature_name | N/A |
-| service | N/A |
-| s_port | N/A |
+| service | Destination Port [number] |
+| s_port | Source Port [number] |
 | resource | N/A |
-| xlatesrc | N/A |
-| xlatedst | N/A |
-| NAT_rulenum | N/A |
-| NAT_addtnl_rulenum | N/A |
-| xlatedport | N/A |
-| xlatesport | N/A |
+| xlatesrc | Translated Source IP Address (after NAT) [IP] |
+| xlatedst | Translated Destination IP address (after NAT) [IP] |
+| NAT_rulenum | NAT policy rule number |
+| NAT_addtnl_rulenum | additional NAT policy rule number |
+| xlatedport | Translated destination port [number] |
+| xlatesport | Translated source port [number] |
 | UserCheck_incident_uid | N/A |
 | UserCheck | N/A |
 | dlp_incident_uid | N/A |
