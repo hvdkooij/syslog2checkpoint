@@ -24,9 +24,9 @@ Most particularly by running a fwm logexport and fetching the first line
 | rule_uid | UID of policy rule |
 | rule_name | Name of policy rule |
 | service_id | N/A |
-| src | Source IP address |
-| dst | Destination IP Address |
-| proto | IP Protocol (number) |
+| src | Source IP address [IP] |
+| dst | Destination IP Address [IP] |
+| proto | IP Protocol [number] |
 | scheme: | N/A |
 | methods: | N/A |
 | peer gateway | N/A |
@@ -232,8 +232,8 @@ Most particularly by running a fwm logexport and fetching the first line
 | detected_on | N/A |
 | Errors | N/A |
 | TE_verdict_determined_by | N/A |
-| from | N/A |
-| to | N/A |
+| from | SMTP Sender [email] |
+| to | SMTP Recipient [email] |
 | Email Subject | N/A |
 | packet_capture_unique_id | N/A |
 | srckeyid | N/A |
