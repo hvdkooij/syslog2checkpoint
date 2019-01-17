@@ -4,6 +4,7 @@ This is the result of a bit of reverse enginering.
 Most particularly by running a fwm logexport and fetching the first line
 
 | Field Name | Description |
+| ---------- | ----------- |
 | num | line number in log |
 | date | N/A |
 | time | N/A |
