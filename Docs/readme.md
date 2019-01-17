@@ -204,6 +204,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | vendor_list | N/A | N/A |
 | action_details | N/A | N/A |
 | description | N/A | N/A |
+| scope | N/A | N/A |
 | FollowUp | N/A | N/A |
 | db_ver | N/A | N/A |
 | Update Status | N/A | N/A |
