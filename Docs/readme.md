@@ -1,7 +1,7 @@
 # Field Names
 
 This is the result of a bit of reverse enginering.
-Most particularly by running a fwm logexport and fetching the first line
+Most particularly by running a `fwm logexport` and fetching the first line.
 
 | Field Name | Description |
 | ---------- | ----------- |
@@ -12,8 +12,8 @@ Most particularly by running a fwm logexport and fetching the first line
 | type | N/A |
 | action | N/A |
 | alert | N/A |
-| i/f_name | N/A |
-| i/f_dir | N/A |
+| i/f_name | Interface Name [text] |
+| i/f_dir | Interface direction [0/1] |
 | product | N/A |
 | log_sys_message | N/A |
 | origin_id | N/A |
