@@ -56,8 +56,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | frequency | N/A | N/A |
 | UserCheck_Interaction_name | N/A | N/A |
 | ICMP | N/A | N/A |
-| ICMP Type | Integer | N/A |
-| ICMP Code | Integer | N/A |
+| ICMP Type | uint8 | N/A |
+| ICMP Code | uint8 | N/A |
 | bytes | N/A | N/A |
 | sent_bytes | N/A | N/A |
 | received_bytes | N/A | N/A |
@@ -76,7 +76,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | app_sig_id | N/A | N/A |
 | ticket_id | N/A | N/A |
 | reason | N/A | N/A |
-| proxy_src_ip | N/A | N/A |
+| proxy_src_ip | IP address | N/A |
 | Referrer_self_uid | N/A | N/A |
 | update_status | N/A | N/A |
 | update_description | N/A | N/A |
@@ -234,7 +234,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | detected_on | N/A | N/A |
 | Errors | N/A | N/A |
 | TE_verdict_determined_by | N/A | N/A |
-| from | Email addres | SMTP Sender |
+| from | Email address | SMTP Sender |
 | to | REmail address | SMTP Recipient |
 | Email Subject | N/A | N/A |
 | packet_capture_unique_id | N/A | N/A |
@@ -257,8 +257,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | Instruction: | N/A | N/A |
 | file_id | N/A | N/A |
 | mail_id | N/A | N/A |
-| mail_sender | N/A | N/A |
-| mail_recipient | N/A | N/A |
+| mail_sender | email address | N/A |
+| mail_recipient | email address | N/A |
 | scrubbed_content | N/A | N/A |
 | scrub_activity | N/A | N/A |
 | risk | N/A | N/A |
@@ -277,8 +277,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | Summary | N/A | N/A |
 | message | N/A | N/A |
 | ip_id | N/A | N/A |
-| ip_len | N/A | N/A |
-| ip_offset | N/A | N/A |
+| ip_len | uint16 | N/A |
+| ip_offset | uint16 | N/A |
 | fragments_dropped | N/A | N/A |
 | during_sec | N/A | N/A |
 | DCE-RPC Interface UUID | N/A | N/A |
@@ -352,3 +352,5 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | uint8 | Unsigned 8 bit integer |
 | uint16 | Unsigned 16 bit integer |
 | uint32 | Unsigned 32 bit integer |
+
+Please provide additional information if you have it.
