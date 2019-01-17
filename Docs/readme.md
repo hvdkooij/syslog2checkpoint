@@ -3,24 +3,24 @@
 This is the result of a bit of reverse enginering.
 Most particularly by running a `fwm logexport` and fetching the first line.
 
-| Field Name | Description |
-| ---------- | ----------- |
-| num | line number in log |
-| date | N/A |
-| time | N/A |
-| orig | Origin of the log event |
-| type | N/A |
-| action | N/A |
-| alert | N/A |
-| i/f_name | Interface Name [text] |
-| i/f_dir | Interface direction [0/1] |
-| product | N/A |
+| Field Name | Type | Description |
+| ---------- | ---- | ----------- |
+| num | number | line number in log |
+| date | N/A | N/A |
+| time | N/A | N/A |
+| orig | N/A | Origin of the log event |
+| type | N/A | N/A |
+| action | N/A | N/A |
+| alert | N/A | N/A |
+| i/f_name | Text | Interface Name |
+| i/f_dir | (0/1) | Interface direction |
+| product | Usually the blade in use |
 | log_sys_message | N/A |
 | origin_id | N/A |
 | ProductFamily | N/A |
 | inzone | N/A |
 | outzone | N/A |
-| rule | Security policy rule number |
+| rule | Security policy rule number [number] |
 | rule_uid | UID of policy rule |
 | rule_name | Name of policy rule |
 | service_id | N/A |
@@ -232,8 +232,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | detected_on | N/A |
 | Errors | N/A |
 | TE_verdict_determined_by | N/A |
-| from | SMTP Sender [email] |
-| to | SMTP Recipient [email] |
+| from | SMTP Sender [email address] |
+| to | SMTP Recipient [email address] |
 | Email Subject | N/A |
 | packet_capture_unique_id | N/A |
 | srckeyid | N/A |
