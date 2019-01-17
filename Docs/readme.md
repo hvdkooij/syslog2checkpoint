@@ -1,13 +1,15 @@
-# Field Names
+# Information
 
 This is the result of a bit of reverse enginering.
 Most particularly by running a `fwm logexport` and fetching the first line.
 
+### Field names
+
 | Field Name | Type | Description |
 | ---------- | ---- | ----------- |
 | num | Integer | line number in log |
-| date | N/A | N/A |
-| time | N/A | N/A |
+| date | N/A | Date of log event |
+| time | N/A | Time of log event |
 | orig | N/A | Origin of the log event |
 | type | N/A | N/A |
 | action | N/A | N/A |
@@ -26,7 +28,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | service_id | N/A | N/A |
 | src | IP | Source IP address |
 | dst | IP | Destination IP Address |
-| proto | Integer | IP Protocol |
+| proto | uint8 | IP Protocol |
 | scheme: | N/A | N/A |
 | methods: | N/A | N/A |
 | peer gateway | N/A | N/A |
@@ -35,15 +37,15 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | community | N/A | N/A |
 | fw_subproduct | N/A | N/A |
 | vpn_feature_name | N/A | N/A |
-| service | Integer | Destination Port |
-| s_port | Integer | Source Port |
+| service | uint16 | Destination Port |
+| s_port | uint16 | Source Port |
 | resource | N/A | N/A |
 | xlatesrc | IP | Translated Source IP Address (after NAT) |
 | xlatedst | IP | Translated Destination IP address (after NAT) |
 | NAT_rulenum | Number | NAT policy rule number |
 | NAT_addtnl_rulenum | Number | additional NAT policy rule number |
-| xlatedport | Integer | Translated destination port |
-| xlatesport | Integer | Translated source port |
+| xlatedport | uint16 | Translated destination port |
+| xlatesport | uint16 | Translated source port |
 | UserCheck_incident_uid | N/A | N/A |
 | UserCheck | N/A | N/A |
 | dlp_incident_uid | N/A | N/A |
@@ -187,9 +189,9 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | severity | N/A | N/A |
 | url | N/A | N/A |
 | file name | N/A | N/A |
-| scan result | N/A |
-| Protection name | N/A |
-| malware_family | N/A |
+| scan result | N/A | N/A |
+| Protection name | N/A | N/A |
+| malware_family | N/A | N/A |
 | file_md5 | N/A | N/A |
 | Source OS | N/A | N/A |
 | dst_country | N/A | N/A |
@@ -202,20 +204,20 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | vendor_list | N/A | N/A |
 | action_details | N/A | N/A |
 | description | N/A |scope | N/A |
-| FollowUp | N/A |
-| db_ver | N/A |
-| Update Status | N/A |
-| subscription_stat | N/A |
-| subscription_stat_desc | N/A |
-| next_update_desc | N/A |
-| SmartDefense Profile | N/A |
-| Performance Impact | N/A |
-| Industry Reference | N/A |
-| Update Version | N/A |
-| Attack Info | N/A |
-| attack | N/A |
-| rule_guid | N/A |
-| hit | N/A |
+| FollowUp | N/A | N/A |
+| db_ver | N/A | N/A |
+| Update Status | N/A | N/A |
+| subscription_stat | N/A | N/A |
+| subscription_stat_desc | N/A | N/A |
+| next_update_desc | N/A | N/A |
+| SmartDefense Profile | N/A | N/A |
+| Performance Impact | N/A | N/A |
+| Industry Reference | N/A | N/A |
+| Update Version | N/A | N/A |
+| Attack Info | N/A | N/A |
+| attack | N/A | N/A |
+| rule_guid | N/A | N/A |
+| hit | N/A | N/A |
 | policy | N/A | N/A |
 | first_hit_time | N/A | N/A |
 | last_hit_time | N/A | N/A |
@@ -231,7 +233,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | emulated_on | N/A | N/A |
 | detected_on | N/A | N/A |
 | Errors | N/A | N/A |
-| TE_verdict_determined_by | N/A |
+| TE_verdict_determined_by | N/A | N/A |
 | from | Email addres | SMTP Sender |
 | to | REmail address | SMTP Recipient |
 | Email Subject | N/A | N/A |
@@ -342,3 +344,11 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | drop reason | N/A | N/A |
 | Log delay | N/A | N/A |
 | capture_uuid | N/A | N/A |
+
+### Types
+
+| Type | Description |
+| ---- | ----------- |
+| uint8 | Unsigned 8 bit integer |
+| uint16 | Unsigned 16 bit integer |
+| uint32 | Unsigned 32 bit integer |
