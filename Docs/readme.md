@@ -76,7 +76,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | app_sig_id | N/A | N/A |
 | ticket_id | N/A | N/A |
 | reason | N/A | N/A |
-| proxy_src_ip | IP address | N/A |
+| proxy_src_ip | IP | N/A |
 | Referrer_self_uid | N/A | N/A |
 | update_status | N/A | N/A |
 | update_description | N/A | N/A |
@@ -203,7 +203,7 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | malware_action | N/A | N/A |
 | vendor_list | N/A | N/A |
 | action_details | N/A | N/A |
-| description | N/A |scope | N/A |
+| description | N/A | N/A |
 | FollowUp | N/A | N/A |
 | db_ver | N/A | N/A |
 | Update Status | N/A | N/A |
@@ -234,8 +234,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | detected_on | N/A | N/A |
 | Errors | N/A | N/A |
 | TE_verdict_determined_by | N/A | N/A |
-| from | Email address | SMTP Sender |
-| to | REmail address | SMTP Recipient |
+| from | email | SMTP Sender |
+| to | email | SMTP Recipient |
 | Email Subject | N/A | N/A |
 | packet_capture_unique_id | N/A | N/A |
 | srckeyid | N/A | N/A |
@@ -257,8 +257,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | Instruction: | N/A | N/A |
 | file_id | N/A | N/A |
 | mail_id | N/A | N/A |
-| mail_sender | email address | N/A |
-| mail_recipient | email address | N/A |
+| mail_sender | email | N/A |
+| mail_recipient | email | N/A |
 | scrubbed_content | N/A | N/A |
 | scrub_activity | N/A | N/A |
 | risk | N/A | N/A |
@@ -310,8 +310,8 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 | hardware_model | N/A | N/A |
 | session_timeout | N/A | N/A |
 | login_timestamp | N/A | N/A |
-| host_ip | N/A | N/A |
-| office_mode_ip | N/A | N/A |
+| host_ip | IP | N/A |
+| office_mode_ip | IP | N/A |
 | tunnel_protocol | N/A | N/A |
 | latitude | N/A | N/A |
 | longitude | N/A | N/A |
@@ -349,6 +349,11 @@ Most particularly by running a `fwm logexport` and fetching the first line.
 
 | Type | Description |
 | ---- | ----------- |
+| binary | Either 0 or 1 |
+| email | Email addres |
+| IP | IP address (Could be either IPv4 or IPv6) |
+| IPv4 | IPv4 address |
+| IPv6 | IPv6 address |
 | uint8 | Unsigned 8 bit integer |
 | uint16 | Unsigned 16 bit integer |
 | uint32 | Unsigned 32 bit integer |
