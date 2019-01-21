@@ -3,6 +3,11 @@
 This is the result of a bit of reverse enginering.
 Most particularly by running a `fwm logexport` and fetching the first line.
 
+It seems you can also find them on your SmartCenter.
+"Definitions of Check Point log fields are located in the `$FWDIR/conf/log_fields.C` file on Security Management Server / Domain Management Server."
+
+You can use `grep field_name log_fields.C | sed s/^.*\(//g | sed s/\).*$//g`
+
 ### Field names
 
 | Field Name | Type | Description |
