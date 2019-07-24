@@ -1,5 +1,5 @@
 # Check Point parser for syslog from Barracuda Email Security Gateway
-(This unit was formerly known as the Barracuda Spam Firewall so hence the use of BSF.)
+(This unit was formerly known as the Barracuda Spam Firewall so hence the name BSF.)
 
 Installation instructions:
  1. Follow [SecureKnowledge article sk55020](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk55020)
