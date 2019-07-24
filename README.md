@@ -16,3 +16,6 @@ I am working a bit on:
 | pfSense | Workable (no IPv6 support yet) |
 
 See also: [Logging and Monitoring R80.20 Administration Guide => Appendix: Manual Syslog Parsing](https://sc1.checkpoint.com/documents/R80.20_GA/WebAdminGuides/EN/CP_R80.20_LoggingAndMonitoring_AdminGuide/124810.htm)
+
+This has been tested with R80.20 and R80.30
+This has not been tested with R80.20 M1 or R80.20 M2
