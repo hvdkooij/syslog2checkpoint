@@ -16,7 +16,7 @@
 				:command (
 					:cmd_name (try)
 					:parse_from (start_position)
-					:regexp ("((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[ 	]+[0-9]+[ 	]+[0-9]+:[0-9]+:[0-9]+)[ 	]+([a-zA-Z]+[0-9a-zA-Z_-]*:)[ 	]+([a-zA-Z]+[0-9a-zA-Z_-]*)[ 	]+(IN=)([a-zA-Z]+[0-9a-zA-Z_-]*)[ 	]+(.*)[ 	]+(SRC=)([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)[ 	]+")
+					:regexp ("((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[ 	]+[0-9]+[ 	]+[0-9]+:[0-9]+:[0-9]+)[ 	]+([a-zA-Z]+[0-9a-z A-Z_-]*:)[ 	]+([a-zA-Z]+[0-9a-zA-Z_-]*)[ 	]+(IN=)([a-zA-Z]+[0-9a-zA-Z_-]*)[ 	]+(.*)[ 	]+(SRC=)([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)[ 	]+")
 					:add_field (
 						:type (index)
 						:field_name (action)
