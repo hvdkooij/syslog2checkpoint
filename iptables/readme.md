@@ -3,6 +3,7 @@
 Installation instructions:
  1. Follow [SecureKnowledge article sk55020](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk55020)
  2. Copy files to work directory on Smart Center.
+    ```curl_cli -k https://raw.githubusercontent.com/hvdkooij/syslog2checkpoint/master/iptables/iptables.C --output iptables.C```
  3. `addParsingFile -p iptables.C -d iptables_dict.ini`
 
  ## WARNING: This will stop and restart your SmartCenter!!!
